@@ -1,34 +1,47 @@
 import { Link, NavLink } from "react-router-dom"
 import './index.scss'
 import LogoS from "../../assets/images/logo.jpeg"
-import LogoSubtitle from "../../assets/images/logo-subtitle.jpeg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faHome, faUser, faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { faHome, faUser, faEnvelope, faBars, faXmark } from "@fortawesome/free-solid-svg-icons"
 import { faLinkedin, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons"
+import React, { useState, useEffect } from "react"
+import Loader from "react-loaders"
 
-const Sidebar = () => (
-    <div className="nav-bar">
-        <Link className="logo" to="/">
-            <img src={LogoS} alt="logo" />
-            <img className="sub-logo" src={LogoSubtitle} alt="ministeri" />
-        </Link>
-        <nav>
+
+const Sidebar = () => {
+
+    const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+
+    
+
+    const toggleSidebar = () => {
+        setIsSidebarOpen(!isSidebarOpen);
+    }
+
+    return(
+    <div className={`nav-bar ${isSidebarOpen ? "" : "open"}`}>
+        {isSidebarOpen ? (
+            <FontAwesomeIcon className={`close-btn ${isSidebarOpen ? "visible" : ""}`} icon={faBars} color="#fff" onClick={toggleSidebar} />
+        ) : (
+        <FontAwesomeIcon className={`toggle-btn ${!isSidebarOpen ? "visible" : ""}`} icon={faXmark} color="#fff" onClick={toggleSidebar}/>
+        )}
+        <nav className="menu-trigger">
         <NavLink exact="true" 
                 activeclassname="active" 
                 to="/">
-            <FontAwesomeIcon icon={faHome} color="#4b4b4e" />
+            <p>Home</p>
         </NavLink>
         <NavLink exact="true" 
                 activeclassname="active" 
                 className="about-link" 
                 to="/about">
-            <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+            <p>About</p>
         </NavLink>
         <NavLink exact="true" 
                 activeclassname="active" 
                 className="contact-link"
                 to="/contact">
-            <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+            <p>Contact</p>
         </NavLink>
         </nav>
         <ul>
@@ -36,25 +49,27 @@ const Sidebar = () => (
                 <a target="_blank" 
                     rel="noreferrer" 
                     href="https://www.linkedin.com/in/sugandi-putra-ginting-94ba9b55/">
-                    <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+                    <FontAwesomeIcon icon={faLinkedin} color="#ede7d9" />
                 </a>
             </li>
             <li>
                 <a target="_blank" 
                     rel="noreferrer" 
                     href="https://www.instagram.com/gandimoenthe/">
-                    <FontAwesomeIcon icon={faInstagram} color="#4d4d4e" />
+                    <FontAwesomeIcon icon={faInstagram} color="#ede7d9" />
                 </a>
             </li>
             <li>
                 <a target="_blank" 
                     rel="noreferrer" 
                     href="https://www.youtube.com/@GandiMoenthe">
-                    <FontAwesomeIcon icon={faYoutube} color="#4d4d4e" />
+                    <FontAwesomeIcon icon={faYoutube} color="#ede7d9" />
                 </a>
             </li>
         </ul>
+
     </div>
     )
+    }
 
 export default Sidebar

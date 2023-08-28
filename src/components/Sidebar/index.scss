@@ -1,11 +1,48 @@
+.nav-bar.open {
+    width: 500px;
+    transition: width 0.3s ease-in-out;
+}
+
 .nav-bar {
-    background: #181818;
-    width: 60px;
+    transition: width 0.3s ease-in-out;
+    right: 0px;
+    background: #4b4237;
     height: 100%;
     position: absolute;
+    width: 0px;
     top: 0;
     z-index: 3;
     min-height: 500px;
+
+
+    .toggle-btn {
+        position: absolute;
+        right: 0px;
+        padding: 15px 10px;
+        width: 25px;
+        height: 25px;
+        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    }
+
+    .close-btn {
+        position: absolute;
+        right: 0px;
+        padding: 15px 10px;
+        width: 25px;
+        height: 25px;
+        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    }
+
+    .toggle-btn, 
+    .close-btn {
+        opacity: 1;
+    }
+
+    .toggle-btn.open,
+    .close-btn.open {
+        opacity: 1;
+    }
+
 
     .logo {
         display: block;
@@ -14,8 +51,9 @@
         img {
             display: block;
             margin: 8px auto;
-            width: 24px;
+            width: 120px;
             height: auto;
+            border-radius: 100%;
 
             &.sub-logo {
                 width: 50px;
@@ -35,7 +73,7 @@
         a {
             font-size: 22px;
             font-family: Arial, Helvetica, sans-serif;
-            color: #4d4d4e;
+            color: #a49694;
             display: block;
             line-height: 51px;
             height: 51px;
@@ -47,7 +85,8 @@
             }
         
             &:hover {
-                color: #770c72;
+                color: #ede7d9;
+                transition: all 0.5s ease-out;
         
                 svg {
                     opacity: 0;
@@ -71,29 +110,9 @@
                 transition: all 0.3s ease-out;
             }
     
-            &:first-child {
-                &::after {
-                    content: 'HOME';
-                }
-            }
+            
         }
-        a.about-link {
-            &:after {
-                content: 'ABOUT';
-            }
-        }
-
-        a.contact-link {
-            &:after {
-                content: 'CONTACT';
-            }
-        }
-
-        a.active {
-            svg {
-                color: #770c72;
-            }
-        }
+        
     }    
 
     ul {
@@ -118,7 +137,7 @@
                 line-height: 16px;
 
                 &:hover svg {
-                    color: #770c72;
+                    color: #a49694;
                 }
             }
         }

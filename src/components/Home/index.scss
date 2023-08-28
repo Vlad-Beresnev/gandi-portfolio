@@ -1,8 +1,19 @@
+.logo {
+    a {
+        position: absolute;
+        top: 0px;
+        font-family: 'Helvetica';
+        font-size: 24px;
+        padding: 10px;
+        cursor: pointer;
+    }
+}
+
 .home-page {
 
     .text-zone {
         position: absolute;
-        left: 10%;
+        left: 30%;
         top: 50%;
         transform: translateY(-50%);
         width: 40%;
@@ -12,14 +23,13 @@
 
     h1 {
 
-        color: #fff;
+        color: #424242;
         font-size: 53px;
         margin: 0;
         font-family: 'Coolvetica';
         font-weight: 400;
 
         &::before {
-            content: '<h1>';
             font-family: 'La Belle Aurore';
             color: #770c72;
             font-size: 18px;
@@ -30,7 +40,6 @@
         }
 
         &::after {
-            content: '<h1/>';
             font-family: 'La Belle Aurore';
             color: #770c72;
             font-size: 18px;
@@ -55,7 +64,7 @@
         color: #8d8d8d;
         margin-top: 20px;
         font-weight: 400;
-        font-size: 11px;
+        font-size: 13px;
         font-family: sans-serif;
         letter-spacing: 3px;
         animation: fadeIn 1s 1.8s backwards;

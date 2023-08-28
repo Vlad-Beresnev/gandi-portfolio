@@ -1,23 +1,22 @@
 import { Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
+import Loader from 'react-loaders';
 
 
 const Home = () => {
-        const {letterClass, setLetterClass} = useState('text-animate');
+        const [letterClass, setLetterClass] = useState('text-animate');
         const nameArray = [' ', 'G', 'a', 'n', 'd', 'i'];
         const jobArray = [ 's', 'a', 'l', 'e', 'r'];
     
-
-        useEffect(() => {
-             return setTimeout(() => {
-                setLetterClass('text-animate-hover')
-            }, 4000);
-        }, []);
-    
+       
 
     return (
+        <>
+        <div className='logo'>
+                <a >Sugandi Moenthe</a>
+            </div>
         <div className="container home-page">
             <div className="text-zone">
                 <h1>
@@ -37,8 +36,10 @@ const Home = () => {
                 <h2>Coach / Team Leader / Fundraiser / Saler</h2>
                 <Link to="/contact" className='flat-buttom'>CONTACT ME</Link>
             </div>
-
+            
         </div>
+        <Loader type="pacman" />
+        </>
     );
 
 }

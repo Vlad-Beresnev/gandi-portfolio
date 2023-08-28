@@ -9,15 +9,14 @@
         min-width: 10px;
         display: inline-block;
         animation-fill-mode: both;
-
+    
         &:hover {
             animation: rubberBand 1s;
             color: #770c72;
         }
-
-
     }
 }
+
 
 @for $i from 1 through 35 {
     .text-animate._#{$i} {
