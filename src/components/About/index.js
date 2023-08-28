@@ -14,8 +14,8 @@ const About = () => {
     return (
         <>
         <div className='logo'>
-                <a className='logo-home' href="/">Sugandi Moenthe</a>
-                <a className='logo-about' href="/about">About</a>
+                <a className='logo-home' href="/" style={{color: "#fff"}}>Sugandi Moenthe</a>
+                <a className='logo-about' href="/about" style={{color: "#fff"}}>About</a>
         </div>
         <div className='container about-page'>
             <div className='text-zone'>
@@ -55,7 +55,7 @@ const About = () => {
             </div>
 
         </div>
-        <Loader type="pacman" />
+        <Loader type="line-scale-pulse-out" />
         </>
 
     )

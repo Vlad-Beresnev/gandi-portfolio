@@ -1,9 +1,10 @@
-$primary-color: #770c72;
+$primary-color: #ffffff;
 $light-color: #f5f3f4;
 $dark-color: #0b090a;
 
 @import 'animate.css';
 @import '~loaders.css/src/animations/pacman.scss';
+@import '~loaders.css/src/animations/line-scale-pulse-out.scss';
 
 @font-face {
   font-family: 'Helvetica Neue';

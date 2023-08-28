@@ -33,8 +33,8 @@ const Contact = () => {
     return (
         <>
         <div className='logo'>
-                <a className='logo-home' href="/">Sugandi Moenthe</a>
-                <a className='logo-about' href="/contact">Contact</a>
+                <a className='logo-home' href="/" style={{color: "#fff"}}>Sugandi Moenthe</a>
+                <a className='logo-about' href="/contact" style={{color: "#fff"}}>Contact</a>
         </div>
         <div className='container contact-page'>
             <div className='text-zone'>
@@ -88,7 +88,7 @@ const Contact = () => {
                 </MapContainer>
             </div>
         </div>
-        <Loader type="pacman" />
+        <Loader type="line-scale-pulse-out" />
         </>
     )
 }
