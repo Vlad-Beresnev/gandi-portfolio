@@ -21,9 +21,21 @@ const Sidebar = () => {
     return(
     <div className={`nav-bar ${isSidebarOpen ? "" : "open"}`}>
         {isSidebarOpen ? (
-            <FontAwesomeIcon className={`close-btn ${isSidebarOpen ? "visible" : ""}`} icon={faBars} color="#fff" onClick={toggleSidebar} />
+            <div className={`menu ${isSidebarOpen ? "" : "openmenu"}`} onClick={toggleSidebar}>
+                <div>
+                    <span className="line-1"></span>
+                    <span className="line-2"></span>
+                    <span className="line-3"></span>
+                </div>
+            </div>
         ) : (
-        <FontAwesomeIcon className={`toggle-btn ${!isSidebarOpen ? "visible" : ""}`} icon={faXmark} color="#fff" onClick={toggleSidebar}/>
+            <div className={`menu ${isSidebarOpen ? "" : "openmenu"}`} onClick={toggleSidebar}>
+            <div>
+                <span className="line-1"></span>
+                <span className="line-2"></span>
+                <span className="line-3"></span>
+            </div>
+        </div>
         )}
         <nav className="menu-trigger">
         <NavLink exact="true" 
