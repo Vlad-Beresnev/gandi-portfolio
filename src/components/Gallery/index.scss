@@ -1,0 +1,22 @@
+.gallery {
+    top: -20%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    animation: fadeIn 1s 1.8s backwards;
+
+    .video {
+        margin: 10px;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 599px) {
+     .video {
+        width: 270px;
+        height: 100%;
+     }
+}

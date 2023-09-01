@@ -11,12 +11,24 @@
 }
 
 .home-page {
+    
+
+    .main-photo {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: -5%;
+        transform: translateY(-50%);
+        left: 50%;
+        transform: translateX(-50%);
+    }
 
     .text-zone {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 40%;
+        top: 50%;
         transform: translateY(-50%);
         left: 50%;
         transform: translateX(-50%);
@@ -30,15 +42,15 @@
         h1 {
             display: flex;
             justify-content: center;
-            color: #ffffff;
-            font-size: 53px;
+            color: #f8edeb;
+            font-size: 44px;
             margin: 0;
-            font-family: 'Coolvetica';
+            font-family: 'La Belle Aurore';
             font-weight: 400;
     
             &::before {
                 font-family: 'La Belle Aurore';
-                color: #ffffff;
+                color: #f8edeb;
                 font-size: 18px;
                 position: absolute;
                 margin-top: -40px;
@@ -48,7 +60,7 @@
     
             &::after {
                 font-family: 'La Belle Aurore';
-                color: #ffffff;
+                color: #f8edeb;
                 font-size: 18px;
                 position: absolute;
                 margin-top: 18px;
@@ -57,74 +69,47 @@
                 opacity: 0.6;
             }
     
-            img {
-                width: 32px;
-                margin-left: 20px;
-                opacity: 0;
-                height: auto;
-                animation: rotateIn 1s linear both;
-                animation-delay: 1.4s;
-            }
+            
         }
     
         h2 {
             color: #ffffff;
-            margin-top: 20px;
+            margin-top: 10px;
             font-weight: 400;
             font-size: 13px;
-            font-family: sans-serif;
-            letter-spacing: 3px;
+            font-family: 'Helvetica';
+            letter-spacing: 2px;
             animation: fadeIn 1s 1.8s backwards;
         }
     }
 
     .flat-buttom {
-        color: #ffffff;
+        color: #f8edeb;
         font-size: 13px;
         font-weight: 400;
         letter-spacing: 4px;
-        font-family: sans-serif;
+        font-family: 'Helvetica';
         text-decoration: none;
         padding: 10px 18px;
-        border: 1px solid #ffffff;
+        border: 1px solid #f8edeb;
         margin-top: 25px;
         animation: fadeIn 1s 1.8s backwards;
         white-space: nowrap;
         transition: 0.5s;
 
         &:hover {
-            background: #ffffff;
+            background: #f8edeb;
             color: #000000;
         }
     }
-    
-    
 }
 
 @media (max-width: 992px) {
-    .home-page .text-zone h1 {
-        font-size: 44px;
-    }
-    .home-page .text-zone h2 {
-        font-size: 12px;
-    }
-    .home-page .flat-buttom {
-        font-size: 12px;
-    }
+    
+
+    
 }
 
 @media (max-width: 576px) {
-    .home-page .text-zone h1 {
-        font-size: 32px;
-    }
-    .home-page .text-zone h2 {
-        font-size: 10px;
-    }
-    .home-page .flat-buttom {
-        font-size: 10px;
-    }
-}
-
-Loader {
-    color: #fff;
+    
 }
