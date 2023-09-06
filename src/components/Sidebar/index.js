@@ -32,7 +32,7 @@ const Sidebar = () => {
     }
 
     return(
-    <div className={`nav-bar ${isSidebarOpen ? "" : "open"}`} ref={sidebarRef}>
+    <div className={`nav-bar ${isSidebarOpen ? "close" : "open"}`} ref={sidebarRef}>
         {isSidebarOpen ? (
             <div className={`menu ${isSidebarOpen ? "" : "openmenu"}`} onClick={toggleSidebar}>
                 <div>

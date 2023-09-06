@@ -1,18 +1,39 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+
 .logo {
-    a {
-        color: #fff;
-        position: absolute;
-        top: 0px;
-        font-family: 'Helvetica';
+    text-decoration: none;
+    display: flex;
+    a, p {
         font-size: 24px;
-        padding: 10px;
-        cursor: pointer;
+        font-family: 'Helvetica';
+        color: #000;
+        text-decoration: none;
+        margin-right: 9px;
     }
+
+    p {
+        margin-top: 0px;
+    }
+
+    
+    
+}
+
+.gallery {
+    display: flex;
+    position: absolute;
+    transform: translateY(50%+10%);
+    width: 100%;
+    height: 100%;
 }
 
 .home-page {
-    
-
+    opacity: 0;
     .main-photo {
         width: 600px;
         display: flex;
@@ -28,7 +49,7 @@
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 50%;
+        top: 43%;
         transform: translateY(-50%);
         left: 50%;
         transform: translateX(-50%);
@@ -101,6 +122,21 @@
             background: #f8edeb;
             color: #000000;
         }
+    }
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    h1 {
+        font-family: 'Helvetica';
     }
 }
 

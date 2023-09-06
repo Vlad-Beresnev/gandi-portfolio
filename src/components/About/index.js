@@ -13,10 +13,10 @@ const About = () => {
 
     return (
         <>
-        <div className='logo'>
-                <a className='logo-home' href="/" style={{color: "#fff"}}>Sugandi Moenthe</a>
-                <a className='logo-about' href="/about" style={{color: "#fff"}}>About</a>
-        </div>
+            <div className='logo'>
+                <a className='logo-home' href='/#' style={{color: "#fff"}}>Sugandi Moenthe</a>
+                <p className='logo-about' style={{color: "#fff"}}>About</p>
+            </div>
         <div className='container about-page'>
             <div className='text-zone'>
                 <h1>
@@ -30,30 +30,6 @@ const About = () => {
                 <p>Quick to grasp new concepts, adept at collaborating with individuals from diverse personalities, nationalities, and backgrounds. Diligent in effort, showing unwavering determination and intrinsic motivation, maintaining a strong sense of integrity and resilience.</p>
                 <p>Rapidly adaptive to new information, skilled in harmonizing with a multitude of characters, cultures, and experiences. Displaying dedicated industriousness, consistent perseverance, internal drive, unquestionable honesty, and remarkable strength.</p>
             </div>  
-
-            <div className="stage-cube-cont">
-                <div className='cubespinner'>
-                    <div className='facel'>
-                        <FontAwesomeIcon icon={faAngular} color="#DD0031" />
-                    </div>
-                    <div className='face2'>
-                        <FontAwesomeIcon icon={faHtml5} color="#F06529" />
-                    </div>
-                    <div className='face3'>
-                        <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
-                    </div>
-                    <div className='face4'>
-                        <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-                    </div>
-                    <div className='face5'>
-                        <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
-                    </div>
-                    <div className='face6'>
-                        <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
-                    </div>
-                </div>
-            </div>
-
         </div>
         <Loader type="line-scale-pulse-out" />
         </>

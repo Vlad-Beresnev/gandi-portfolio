@@ -38,8 +38,7 @@ const Home = () => {
         
     return (
         <>
-        <Parallax pages={pages}>
-            <ParallaxLayer>
+        
                 <div className="container home-page">
                     <div className='main-photo'>
                         <img src={GandiPhoto} alt="gandi-photo" />
@@ -55,12 +54,14 @@ const Home = () => {
                         <Link to="/contact" className='flat-buttom'>CONTACT ME</Link>
                     </div>
                 </div>
+                <div className='container gallery'>
+                    <Gallery />
+                </div>
+                <div className='container about'>
+                    <h1>About</h1>
+                </div>
                 <Loader type="line-scale-pulse-out" />
-            </ParallaxLayer>
-            <ParallaxLayer offset={1}>
-                <Gallery />
-            </ParallaxLayer>
-        </Parallax>
+            
         </>
     );
 

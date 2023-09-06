@@ -34,7 +34,7 @@ const Contact = () => {
         <>
         <div className='logo'>
                 <a className='logo-home' href="/" style={{color: "#fff"}}>Sugandi Moenthe</a>
-                <a className='logo-about' href="/contact" style={{color: "#fff"}}>Contact</a>
+                <p className='logo-about' href="/contact" style={{color: "#fff"}}>Contact</p>
         </div>
         <div className='container contact-page'>
             <div className='text-zone'>
