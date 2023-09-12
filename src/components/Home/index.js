@@ -4,6 +4,7 @@ import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import Loader from 'react-loaders';
 import GandiPhoto from "../../assets/images/gandi-2.png"
+import JohnSmith from "../../assets/images/john-smith.jpeg"
 import Gallery from "../../components/Gallery"
 import { Parallax, ParallaxLayer } from "@react-spring/parallax"
 
@@ -38,8 +39,8 @@ const Home = () => {
         
     return (
         <>
-        
-                <div className="container home-page">
+            <div className='home'>
+                <section className="container home-page">
                     <div className='main-photo'>
                         <img src={GandiPhoto} alt="gandi-photo" />
                     </div>
@@ -53,15 +54,23 @@ const Home = () => {
                         {/*<h2>All the time God is very good!</h2>*/}
                         <Link to="/contact" className='flat-buttom'>CONTACT ME</Link>
                     </div>
-                </div>
-                <div className='container gallery'>
+                </section>
+                <section className='container gallery'>
                     <Gallery />
-                </div>
-                <div className='container about'>
-                    <h1>About</h1>
-                </div>
+                </section>
+                <section className='container about'>
+                    <h1 className='title'>About</h1>
+                    <p>John Smith is a seasoned entrepreneur and visionary 
+                        leader with a passion for innovation and technology. 
+                        Born in a small town in the heartland of America, 
+                        he always dreamed of making a big impact on the world.
+                        His journey began with a curiosity about computers at an early age, 
+                        leading him to pursue a degree in computer science.
+                    </p>
+                    <img src={JohnSmith} alt="John Smith"/>
+                </section>
                 <Loader type="line-scale-pulse-out" />
-            
+            </div>
         </>
     );
 
