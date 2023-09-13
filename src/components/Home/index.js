@@ -42,7 +42,7 @@ const Home = () => {
             <div className='home'>
                 <section className="container home-page">
                     <div className='main-photo'>
-                        <img src={GandiPhoto} alt="gandi-photo" />
+                        <img src={GandiPhoto} alt="gandi" />
                     </div>
                     <div className="text-zone">
                         <h1>
