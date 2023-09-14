@@ -27,8 +27,6 @@ const Gallery = () => {
             <div className="video">
                 <ReactPlayer className="videor" url="https://youtu.be/Nrp8nMBNY4o?si=jh6psLWNeylUrJJA" width="100%"/>
             </div>
-            
-            
         </div>
     )
 }
