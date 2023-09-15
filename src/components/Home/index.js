@@ -10,7 +10,7 @@ import GandiArtist3 from "../../assets/images/gandi-artist3.jpeg"
 import GandiArtist4 from "../../assets/images/gandi-artist4.jpeg"
 import GandiArtist5 from "../../assets/images/gandi-artist5.jpeg"
 import Gallery from "../../components/Gallery"
-import photoGallery from '../../components/photoGallery';
+import Galleryabout from "../../components/photoGallery"
 import { Parallax, ParallaxLayer } from "@react-spring/parallax"
 
 
@@ -149,7 +149,7 @@ const Home = () => {
                         In the grand symphony of life, [Artist's Name]'s melody will forever resonate,
                         an everlasting testament to the timeless power of artistry and the human spirit.
                     </p>
-                    <photoGallery className="container photoGallery"/>
+                    <Galleryabout className="galleryabout" />
                 </section>
                 <Loader type="line-scale-pulse-out" />
             </div>

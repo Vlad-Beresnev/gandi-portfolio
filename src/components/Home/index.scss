@@ -6,6 +6,12 @@ section {
 
 }
 
+.galleryabout {
+    position: absolute;
+    display: flex;
+
+}
+
 .about {
     display: flex;
     flex-direction: column;
@@ -148,12 +154,7 @@ section {
     } 
 }
 
-.photoGallery {
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-}
+
 
 @media (min-width: 993px) {
     .about p {
