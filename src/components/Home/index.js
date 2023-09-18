@@ -65,6 +65,11 @@ const Home = () => {
                 </section>
                 <section className='container about'>
                     <h1 className='title'>The Life and Artistry of Gandi Moenthe</h1>
+                    <div className='desktop-images'>
+                    <img width={800} className='image_desktop' src={GandiArtist} alt="image desktop" />
+                    <img className='image_desktop' src={GandiArtist4} alt="image desktop" />
+                    <img className='image_desktop' src={GandiArtist3} alt="image desktop" />
+                    </div>
                     <p>
                         In the grand tapestry of artistic brilliance, few names shine as brightly as 
                         [Artist's Name], a multifaceted artist and singer whose life story is a mesmerizing 
@@ -78,7 +83,7 @@ const Home = () => {
                         was an inseparable part of their identity. Surrounded by the enchanting beauty of their hometown, 
                         [Artist's Name] drew inspiration from the natural world, weaving it into their artistic tapestry.
                     </p>
-                    <img src={GandiArtist} alt="gandi artist" />
+                    <img className='virgin-images' src={GandiArtist} alt="gandi artist" />
                     <p>
                         [Artist's Name]'s ascent to stardom was a remarkable odyssey marked by 
                         perseverance and an unyielding commitment to their craft. In their formative 
@@ -93,7 +98,7 @@ const Home = () => {
                         from every note they sang. Encouraged by their early successes, [Artist's Name] 
                         decided to take the leap of faith and pursue a career in the music industry.
                     </p>
-                    <img src={GandiArtist2} alt="gandi artist 2" />
+                    <img className='virgin-images' src={GandiArtist2} alt="gandi artist 2" />
                     <p>
                         The journey to recognition was not without its challenges. [Artist's Name] faced 
                         countless rejections, but they remained undeterred. Their unwavering determination 
@@ -116,14 +121,14 @@ const Home = () => {
                         Each piece of their artwork is a reflection of their boundless imagination and an 
                         exploration of the human condition.
                     </p>
-                    <img src={GandiArtist3} alt ="gandi artist 3" />
+                    <img className='virgin-images' src={GandiArtist3} alt ="gandi artist 3" />
                     <p>
                         [Artist's Name]'s artistry has the unique ability to evoke profound emotions, 
                         challenging the viewer to contemplate life's mysteries. Their exhibitions have 
                         graced prestigious galleries worldwide, and their work has earned critical acclaim 
                         for its depth, complexity, and the profound questions it raises.
                     </p>
-                    <img src={GandiArtist4} alt="gandi artist 4" />
+                    <img className='virgin-images' src={GandiArtist4} alt="gandi artist 4" />
                     <p>
                         As [Artist's Name] continues to evolve and expand their artistic horizons, 
                         their legacy grows ever stronger. Their contribution to the world of music and 
@@ -137,7 +142,7 @@ const Home = () => {
                         generations, bridging the gap between the past and the future, reminding us all 
                         of the enduring power of creativity.
                     </p>
-                    <img src={GandiArtist5} alt="gandi artist 5" />
+                    <img className='virgin-images' src={GandiArtist5} alt="gandi artist 5" />
                     <p>
                         [Artist's Name] has not only captured our hearts but also our souls, reminding 
                         us that art and music have the unparalleled ability to heal, inspire, and unite. 
@@ -149,10 +154,10 @@ const Home = () => {
                         In the grand symphony of life, [Artist's Name]'s melody will forever resonate,
                         an everlasting testament to the timeless power of artistry and the human spirit.
                     </p>
-                    <Galleryabout className="galleryabout" />
                 </section>
                 <Loader type="line-scale-pulse-out" />
             </div>
+
         </>
     );
 
