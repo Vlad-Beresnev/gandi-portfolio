@@ -2,14 +2,15 @@
 
 
 .contact-form {
-    width: 100%;
     margin-top: 20px;
+
 
     ul {
         padding: 0;
         margin: 0;
 
         li {
+            width: 100%;
             padding: 0;
             margin: 0;
             list-style: none;
@@ -24,7 +25,7 @@
         }
 
         li.half {
-            width: 49%;
+            width: 147px;
             margin-left: 2%;
             float: left;   
             clear: none;
@@ -37,7 +38,7 @@
 
     input[type="text"],
     input[type="email"] {
-        width: 100%;
+        width: 300px;
         border: 0;
         background: #eee;
         height: 50px;
@@ -48,7 +49,7 @@
     }
 
     textarea {
-        width: 100%;
+        width: 300px;
         border: 0;
         background: #eee;
         height: 50px;
@@ -72,36 +73,6 @@
     }
 }
 
-.info-map {
-    position: absolute;
-    background-color: #000;
-    top: 50px;
-    right: 10%;
-    z-index: 999999;
-    width: 267px;
-    padding: 20px;
-    color: #fff;
-    font-family: 'Helvetica';
-    font-size: 17px;
-    font-weight: 300;
-    opacity: 0;
-    animation: fadeIn 1s 1.5s;
-    animation-fill-mode: forwards;
-
-    span {
-        font-size: 16px;
-        display: block;
-        padding-top: 20px;
-        color: #ffffff;
-    }
-}
-
-.map-wrap {
-    background: rgba(8, 253, 216, 0.1);
-    float: right;
-    width: 53%;
-    height: 100%;
-}
 
 .leaflet-container {
     width: 100%;

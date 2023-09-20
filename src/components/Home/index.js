@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './index.scss';
+import "../../components/Contact/index.scss"
 import AnimatedLetters from '../AnimatedLetters';
 import Loader from 'react-loaders';
 import GandiPhoto from "../../assets/images/gandi-2.png"
@@ -10,8 +11,8 @@ import GandiArtist3 from "../../assets/images/gandi-artist3.jpeg"
 import GandiArtist4 from "../../assets/images/gandi-artist4.jpeg"
 import GandiArtist5 from "../../assets/images/gandi-artist5.jpeg"
 import Gallery from "../../components/Gallery"
-import Galleryabout from "../../components/photoGallery"
-import { Parallax, ParallaxLayer } from "@react-spring/parallax"
+import emailjs from "@emailjs/browser"
+
 
 
 const Home = () => {
@@ -41,11 +42,34 @@ const Home = () => {
         }, []);
 
     const [pages, setPages] = useState(calculatePages());
+
+    const refForm = useRef()
+
+    const sendEmail = (e) => {
+        e.preventDefault()
+
+        emailjs
+            .sendForm(
+                'service_k39ea78',
+                'template_ydq0o2x',
+                refForm.current,
+                'qXUoNyhFq_4X966TA'
+            )
+            .then(
+                () => {
+                    alert('Message successfully sent!')
+                    window.location.reload(false)
+                },
+                () => {
+                    alert('Failed to send the message, please try again!')
+                }
+            )
+    }
         
     return (
         <>
             <div className='home'>
-                <section className="container home-page">
+                <section id="home" className="container home-page">
                     <div className='main-photo'>
                         <img src={GandiPhoto} alt="gandi" />
                     </div>
@@ -63,12 +87,12 @@ const Home = () => {
                 <section className='container gallery'>
                     <Gallery />
                 </section>
-                <section className='container about'>
+                <section id="about" className='container about'>
                     <h1 className='title'>The Life and Artistry of Gandi Moenthe</h1>
                     <div className='desktop-images'>
-                    <img width={800} className='image_desktop' src={GandiArtist} alt="image desktop" />
-                    <img className='image_desktop' src={GandiArtist4} alt="image desktop" />
-                    <img className='image_desktop' src={GandiArtist3} alt="image desktop" />
+                        <img className='image-desktop' width={800} src={GandiArtist} alt="image desktop" />
+                        <img className='image-desktop' src={GandiArtist4} alt="image desktop" />
+                        <img className='image-desktop' src={GandiArtist3} alt="image desktop" />
                     </div>
                     <p>
                         In the grand tapestry of artistic brilliance, few names shine as brightly as 
@@ -77,13 +101,13 @@ const Home = () => {
                         like a celestial melody and an artistic vision that transcends boundaries, 
                         [Artist's Name] has captivated the world with their unparalleled talent.
                     </p>
+                    <img className='virgin-images' src={GandiArtist} alt="gandi artist" />
                     <p>
                         Born on [Birth Date] in the picturesque town of [Birthplace], [Artist's Name] showed an early 
                         proclivity for the arts. From their earliest days, the world of music and artistic expression 
                         was an inseparable part of their identity. Surrounded by the enchanting beauty of their hometown, 
                         [Artist's Name] drew inspiration from the natural world, weaving it into their artistic tapestry.
                     </p>
-                    <img className='virgin-images' src={GandiArtist} alt="gandi artist" />
                     <p>
                         [Artist's Name]'s ascent to stardom was a remarkable odyssey marked by 
                         perseverance and an unyielding commitment to their craft. In their formative 
@@ -155,6 +179,44 @@ const Home = () => {
                         an everlasting testament to the timeless power of artistry and the human spirit.
                     </p>
                 </section>
+                <div className='get-container'>
+                    <section >
+                        <div className='contact-page'>
+                            <div className='text-zone'>
+                                <h1>
+                                    <AnimatedLetters 
+                                    letterClass={letterClass}
+                                    strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
+                                    idx={15} />
+                                </h1>
+                                    <p>
+                                        Send me a message!
+                                    </p>
+                                <div className='contact-form'>
+                                    <form ref={refForm} onSubmit={sendEmail}>
+                                        <ul>
+                                            <li className='half'>
+                                                <input type="text" name="name" placeholder="Name" required />
+                                            </li>
+                                            <li className='half'>
+                                                <input type="email" name="email" placeholder="Email" required />
+                                            </li>
+                                            <li>
+                                                <input placeholder='Subject' type="text" name="subject" required />
+                                            </li>
+                                            <li>
+                                                <textarea placeholder='Message' name="message" required></textarea>
+                                            </li>
+                                            <li>
+                                                <input type="submit" className='flat-button' value="SEND" /> 
+                                            </li>
+                                        </ul>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
                 <Loader type="line-scale-pulse-out" />
             </div>
 

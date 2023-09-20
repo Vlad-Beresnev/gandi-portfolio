@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router-dom"
 import './index.scss'
+import "../../components/Home/index.scss"
 import LogoS from "../../assets/images/logo.jpeg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHome, faUser, faEnvelope, faBars, faXmark, } from "@fortawesome/free-solid-svg-icons"
@@ -51,25 +52,14 @@ const Sidebar = () => {
         </div>
         )}
         <nav className="menu-trigger">
-        <NavLink exact="true" 
-                activeclassname="active" 
-                to="/"
-                onClick={toggleSidebar}>
-            <p>Home</p>
-        </NavLink>
-        <NavLink exact="true" 
-                activeclassname="active" 
-                className="about-link" 
-                to="/about"
-                onClick={toggleSidebar}>
-            <p>About</p>
-        </NavLink>
+        <a className="contact-link" exact="true" activeclassname="active" to="/home" href="#home" onClick={toggleSidebar}>Home</a>
+        <a className="contact-link" href="#about" onClick={toggleSidebar}>About</a>
         <NavLink exact="true" 
                 activeclassname="active" 
                 className="contact-link"
                 to="/contact"
                 onClick={toggleSidebar}>
-            <p>Contact</p>
+            <p>Get in touch</p>
         </NavLink>
         </nav>
         <ul>

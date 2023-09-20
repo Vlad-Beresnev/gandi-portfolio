@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .nav-bar.open {
     position: fixed;
     width: 400px;
@@ -74,7 +78,9 @@
     min-height: 500px;
     transition: width 0.3s ease-in-out;
 
-    
+    .contact-link {
+        margin-bottom: 20px;
+    }
 
     .toggle-btn,
     .close-btn {
