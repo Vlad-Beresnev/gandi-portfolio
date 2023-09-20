@@ -2,6 +2,19 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
 section {
     height: 100vh;
     display: flex;
@@ -14,6 +27,15 @@ section {
 
 .get-container {
     position: relative;
+}
+
+.footer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
 }
 
 .about {
@@ -36,7 +58,7 @@ section {
         padding: 0 45px;
         top: -10%;
         margin-bottom: 20px;
-        font-family:'Times New Roman', Times, serif;
+        font-family: 'Helvetica';
         font-size: 18px;
     }
 
