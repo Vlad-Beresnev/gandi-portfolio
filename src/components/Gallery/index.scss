@@ -8,8 +8,14 @@
     margin-top: -33px;
 
     .video {
-        margin: 10px;
-        margin-right: 35px;
-        margin-left: 35px;
+        margin: 5px;
     }
+}
+
+.title-instagram {
+    font-family: 'Helvetica';
+    font-size: 28px;
+    background: -webkit-linear-gradient(#962fbf, #d62976, #4f5bd5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

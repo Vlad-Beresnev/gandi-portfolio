@@ -5,7 +5,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    padding: 0;
     margin: 0;
 }
 
@@ -25,17 +25,16 @@ section {
 
 
 
-.get-container {
-    position: relative;
-}
+
 
 .footer {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    bottom: 0;
+    position: relative;
+    
+    p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .about {
@@ -62,10 +61,7 @@ section {
         font-size: 18px;
     }
 
-    p {
-
-    }
-
+   
     img {
         position: relative;
         width: 200px;
@@ -74,6 +70,7 @@ section {
 
 .gallery {
     height: auto;
+    width: 100%;
 }
 
 
@@ -195,7 +192,7 @@ section {
 
         img {
             width: 500px;
-            margin-bottom: 200px;
+            margin-bottom: 100px;
         }
 
     }

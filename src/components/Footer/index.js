@@ -41,9 +41,6 @@ const Footer = () => {
                                     strArray={["G", "e", "t", " ", "i", "n", " ", "t", "o", "u", "c", "h"]}
                                     idx={15} />
                                 </h1>
-                                    <p>
-                                        Send me a message!
-                                    </p>
                                 <div className='contact-form'>
                                     <form ref={refForm} onSubmit={sendEmail}>
                                         <ul>

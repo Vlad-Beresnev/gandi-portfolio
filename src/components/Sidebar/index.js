@@ -52,15 +52,30 @@ const Sidebar = () => {
         </div>
         )}
         <nav className="menu-trigger">
-        <a className="contact-link" exact="true" activeclassname="active" to="/home" href="#home" onClick={toggleSidebar}>Home</a>
-        <a className="contact-link" href="#about" onClick={toggleSidebar}>About</a>
+        <a className="contact-link" exact="true" activeclassname="active" to="/#home" href="/#home" onClick={toggleSidebar}>Home</a>
+        <a className="contact-link" to="/#about" href="/#about" onClick={toggleSidebar}>About</a>
         <NavLink exact="true" 
                 activeclassname="active" 
                 className="contact-link"
                 to="/contact"
                 onClick={toggleSidebar}>
-            <p>Get in touch</p>
+            <p>Work</p>
         </NavLink>
+        <NavLink exact="true" 
+                activeclassname="active" 
+                className="contact-link"
+                to="/contact"
+                onClick={toggleSidebar}>
+            <p>Tour</p>
+        </NavLink>
+        <a exact="true" 
+                activeclassname="active" 
+                className="contact-link"
+                to="/#contact"
+                href="/#contact"
+                onClick={toggleSidebar}>
+            <p>Contact</p>
+        </a>
         </nav>
         <ul>
             <li>

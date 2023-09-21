@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
 import './index.scss';
-import "../../components/Contact/index.scss"
+import "./index-contact.scss"
 import Loader from 'react-loaders';
 import GandiPhoto from "../../assets/images/gandi-2.png"
 import GandiArtist from "../../assets/images/gandi-artist.jpeg"
@@ -179,9 +179,10 @@ const Home = () => {
                         In the grand symphony of life, [Artist's Name]'s melody will forever resonate,
                         an everlasting testament to the timeless power of artistry and the human spirit.
                     </p>
-                </section>
-                <section className="footer">
-                    <Footer />
+                    <br />
+                    <section id="contact" className='container footer'>
+                        <Footer />
+                    </section>
                 </section>
                 <Loader type="line-scale-pulse-out" />
             </div>

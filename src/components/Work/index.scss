@@ -1,0 +1,38 @@
+.work {
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.work-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 150px;
+}
+
+.title {
+    margin: 10px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Helvetica';
+}
+
+.work-item {
+    width: 200px;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: #dfdfdf;
+}
+
+.work-item-1 {
+    min-height: 100px;
+}
+
+.work-item-2 {
+    min-height: 200px;
+}
+
+.work-item-3 {
+    min-height: 300px;
+}
