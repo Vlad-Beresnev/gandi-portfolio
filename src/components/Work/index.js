@@ -14,6 +14,7 @@ import Work7 from "../../assets/images/work-7.png"
 import Work8 from "../../assets/images/work-8.png"
 import Work9 from "../../assets/images/work-9.png"
 import Work10 from "../../assets/images/work-10.png"
+import Footer from "../../components/Footer"
 
 
 const Contact = () => {
@@ -22,7 +23,7 @@ const Contact = () => {
 
     return (
         <div className='work'>
-            <div className='logo'>
+            <div className='logo logo-black'>
                     <a className='logo-home' href="/" style={{color: "#fff"}}>Sugandi Moenthe</a>
                     <p className='logo-about' href="/contact" style={{color: "#fff"}}>Work</p>
             </div>
@@ -32,12 +33,12 @@ const Contact = () => {
                     <img src={Work1} />
                 </div>
                 <div className='work-item work-item-2'>
-                    <button className="button-89" role="button">Listen now!</button>
+                    <button className="button-89" role="button"><a href="https://youtu.be/9nZFCH81TOU?si=CV3Ht6aTldGHlEUb">Listen now!</a></button>
                 </div>
             </div>
             <div className='work-container'>
                 <div className='work-item work-item-1'>
-                    <button className="button-56" role="button"><a href="#">Listen now!</a></button>
+                    <button className="button-56" role="button"><a href="https://youtu.be/tjS8dwVy45g?si=VC-0-webOpRI8BEY">Listen now!</a></button>
                 </div>
                 <div className='work-item work-item-2'>
                     <img src={Work2} />
@@ -48,16 +49,13 @@ const Contact = () => {
                     <img src={Work3} />
                 </div>
                 <div className='work-item work-item-2'>
-                    <button className="button-74" role="button">Button 74</button>
-                </div>
+                    <button className="button-74" role="button"><a href="https://youtu.be/p4RAbw_iLL0?si=kZ7eM_HOHghlGANK">Listen now!</a></button>
+                </div>   
+                
             </div>
             <div className='work-container'>
                 <div className='work-item work-item-1'>
-                <button>
-    <span>
-        Hover Me
-    </span>
-</button>
+                <button className="button-56" role="button"><a href="https://youtu.be/MFrtP3h9-4E?si=Ot6IpluYOtWINDqN">Listen now!</a></button>
                 </div>
                 <div className='work-item work-item-2'>
                     <img src={Work4} />
@@ -65,15 +63,14 @@ const Contact = () => {
             </div>
             <div className='work-container'>
                 <div className='work-item work-item-1'>
-                <img src={Work5} />
+                    <img src={Work5} />
                 </div>
-                <div className='work-item work-item-2'>
-                    <button class="btn"> Shop now
-</button></div>
+            <div className='work-item work-item-2'>
+                <button className="button-74" role="button"><a href="https://youtu.be/CneJXW9chhM?si=2hOUJgJ28lCtR8M-">Listen now!</a></button></div>
             </div>
             <div className='work-container'>
                 <div className='work-item work-item-1'>
-                    <button className="button-53" role="button">Listen now!</button>
+                    <button className="button-53" role="button"><a href="https://youtu.be/d4AQPJy0YXM?si=y3GJZOzVgYp6AJ3I">Listen now!</a></button>
                 </div>
                 <div className='work-item work-item-2'>
                 <img src={Work6} />
@@ -84,15 +81,14 @@ const Contact = () => {
                 <img src={Work7} />
                 </div>
                 <div className='work-item work-item-2'>
-                <button class="Btn">
-</button>
+                    <button className="button-89" role="button"><a href="https://youtu.be/PmSjOF8cWPY?si=f0zf_gOEcPiupoAD">Listen now!</a></button>
                 </div>
             </div>
             <div className='work-container'>
                 <div className='work-item work-item-1'>
                 <button class="uiverse">
     <div class="wrapper">
-        <span>UIVERSE</span>
+        <span><a href="https://youtu.be/V1UT17hSflo?si=YLwCQF3PG0Ic2kl6">Listen now!</a></span>
         <div class="circle circle-12"></div>
         <div class="circle circle-11"></div>
         <div class="circle circle-10"></div>
@@ -117,19 +113,21 @@ const Contact = () => {
                 <img src={Work9} />
                 </div>
                 <div className='work-item work-item-2'>
-                <button class="btn">Hover</button>
+                    <button className="button-53" role="button" ><a href="https://youtu.be/6YuwooKgmDE?si=bSCtXMcJ1ApLXA9S">Listen now!</a></button>
                 </div>
             </div>
             <div className='work-container'>
                 <div className='work-item work-item-1'>
-                <button class="button"> Hey, Hover Me
-</button>
+                    <button className="button-89" role="button"><a href="https://youtu.be/Cxfu_mc2SnI?si=TWatdvSvCwMMSs18">Listen now!</a></button>
                 </div>
                 <div className='work-item work-item-2'>
-                <img src={Work10} />
+                <img src={Work10} alt='work 10' />
                 </div>
             </div>
             <Loader type="line-scale-pulse-out" />
+            <section id="contact" className='container footer'>
+                <Footer />
+            </section>
         </div>
     )
 }

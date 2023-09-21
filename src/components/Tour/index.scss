@@ -1,0 +1,24 @@
+.tour {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.tour-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .tour-item {
+        background-color: #000;
+    }
+
+    .tour-item-1 {
+        min-height: 200px;
+    }
+
+    .tour-item-2 {
+        min-height: 200px;
+    }
+}
