@@ -1,7 +1,18 @@
 import "./index.scss"
 import React from "react"
 import ReactPlayer from "react-player"
-
+import Insta1 from "../../assets/images/insta-1.jpeg"
+import Insta2 from "../../assets/images/insta-2.jpeg"
+import Insta3 from "../../assets/images/insta-3.jpeg"
+import Insta4 from "../../assets/images/insta-4.jpeg"
+import Insta5 from "../../assets/images/insta-5.jpeg"
+import Insta6 from "../../assets/images/insta-6.jpeg"
+import Insta7 from "../../assets/images/insta-7.jpeg"
+import Insta8 from "../../assets/images/insta-8.jpeg"
+import Insta9 from "../../assets/images/insta-9.jpeg"
+import Insta10 from "../../assets/images/insta-10.jpeg"
+import Insta11 from "../../assets/images/insta-11.jpeg"
+import Insta12 from "../../assets/images/insta-12.jpeg"
 
 
 const Gallery = () => {
@@ -30,8 +41,19 @@ const Gallery = () => {
             </div>
         </div>
         <h2 className="container title title-instagram">Instagram</h2>
-        <div className="gallery gallery-intagram">
-            
+        <div className="gallery gallery-instagram">
+            <img src={Insta1} />
+            <img src={Insta2} />
+            <img src={Insta3} />
+            <img src={Insta4} />
+            <img src={Insta5} />
+            <img src={Insta6} />
+            <img src={Insta7} />
+            <img src={Insta8} />
+            <img src={Insta9} />
+            <img src={Insta10}  />
+            <img src={Insta11}  />
+            <img src={Insta12}  />
         </div>
     </div>
     )

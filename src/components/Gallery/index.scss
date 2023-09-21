@@ -1,3 +1,5 @@
+
+
 .gallery {
     position: relative;
     display: flex;
@@ -5,12 +7,24 @@
     justify-content:center;
     justify-items: center;
     animation: fadeIn 1s 1.8s backwards;
-    margin-top: -33px;
+    height: auto;
+
 
     .video {
         margin: 5px;
     }
 }
+
+.gallery-youtube {
+    margin-top: -60px;
+    margin-bottom: 40px;
+}
+
+.gallery-instagram {
+    margin-top: -80px;
+
+}
+
 
 .title-instagram {
     font-family: 'Helvetica';
@@ -18,4 +32,11 @@
     background: -webkit-linear-gradient(#962fbf, #d62976, #4f5bd5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+
+.gallery img {
+    width: 300px;
+    object-fit: cover;
+    margin: 5px;
 }
