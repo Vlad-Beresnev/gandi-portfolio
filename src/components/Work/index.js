@@ -22,7 +22,7 @@ const Contact = () => {
     
 
     return (
-        <div className='work'>
+        <div id="work" className='work'>
             <div className='logo logo-black'>
                     <a className='logo-home' href="/" style={{color: "#fff"}}>Sugandi Moenthe</a>
                     <p className='logo-about' href="/work" style={{color: "#fff"}}>Work</p>

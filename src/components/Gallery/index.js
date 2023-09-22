@@ -48,18 +48,18 @@ const Gallery = () => {
         </div>
         <h2 className="container title title-instagram">Instagram</h2>
         <div className="gallery gallery-instagram">
-            <img src={Insta1} />
-            <img src={Insta2} />
-            <img src={Insta3} />
-            <img src={Insta4} />
-            <img src={Insta5} />
-            <img src={Insta6} />
-            <img src={Insta7} />
-            <img src={Insta8} />
-            <img src={Insta9} />
-            <img src={Insta10}  />
-            <img src={Insta11}  />
-            <img src={Insta12}  />
+            <a href="https://www.instagram.com/p/Cq0RiKuIxCY/"><img src={Insta1} /></a>
+            <a href="https://www.instagram.com/p/Cq3oGFQItlH/"><img src={Insta2} /></a>
+            <a href="https://www.instagram.com/p/CseEgI4o9Kb/"><img src={Insta3} /></a>
+            <a href="https://www.instagram.com/p/Cu7snToswur/"><img src={Insta4} /></a>
+            <a href="https://www.instagram.com/p/CvR44JHoDv5/?img_index=1"><img src={Insta5} /></a>
+            <a href="https://www.instagram.com/p/Cwa52ZjoDpL/"><img src={Insta6} /></a>
+            <a href="https://www.instagram.com/p/CnV4tiwPGWG/"><img src={Insta7} /></a>
+            <a href="https://www.instagram.com/p/CoUna-nDuvN/"><img src={Insta8} /></a>
+            <a href="https://www.instagram.com/p/CMtZa02DHKq/"><img src={Insta9} /></a>
+            <a href="https://www.instagram.com/p/CV-n5qqj1yv/"><img src={Insta10}  /></a>
+            <a href="https://www.instagram.com/p/CgZwBxCDES5/"><img src={Insta11}  /></a>
+            <a href="https://www.instagram.com/p/Cj5fk9FjqQn/?img_index=1"><img src={Insta12}  /></a>
         </div>
     </div>
     )
