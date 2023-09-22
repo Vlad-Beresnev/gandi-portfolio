@@ -65,18 +65,16 @@ const Sidebar = () => {
                 onClick={toggleSidebar}>
             <p>Work</p>
         </Link>
-        <NavLink  
+        <Link  
                 className="contact-link"
                 to="/tour"
-                href="/#tour"
                 onClick={toggleSidebar}>
             <p>Tour</p>
-        </NavLink>
+        </Link>
         <a exact="true" 
                 activeclassname="active" 
                 className="contact-link"
                 to="/#contact"
-                href="#contact"
                 onClick={toggleSidebar}>
             <p>Contact</p>
         </a>
