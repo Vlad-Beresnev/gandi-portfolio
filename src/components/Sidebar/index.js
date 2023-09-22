@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom"
+import { Link, NavLink, useLocation } from "react-router-dom"
 import './index.scss'
 import "../../components/Home/index.scss"
 import LogoS from "../../assets/images/logo.jpeg"
@@ -11,6 +11,7 @@ import Loader from "react-loaders"
 
 const Sidebar = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+    const location = useLocation();
     const sidebarRef = useRef(null);
 
     useEffect(() => {
@@ -31,6 +32,8 @@ const Sidebar = () => {
     const toggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen);
     }
+
+    const isWorkPage = location.pathname === "/work";
 
     return(
     <div className={`nav-bar ${isSidebarOpen ? "close" : "open"}`} ref={sidebarRef}>
@@ -56,15 +59,18 @@ const Sidebar = () => {
         <a className="contact-link" to="/#about" href="/#about" onClick={toggleSidebar}>About</a>
         <NavLink exact="true" 
                 activeclassname="active" 
-                className="contact-link"
-                to="/contact"
-                onClick={toggleSidebar}>
+                className={`openmenu span ${location.pathname === "/work" ? "work-page" : ""}`}
+                to="/work"
+                onClick={() => {
+                    toggleSidebar();
+                }}>
             <p>Work</p>
         </NavLink>
         <NavLink exact="true" 
                 activeclassname="active" 
                 className="contact-link"
                 to="/tour"
+                href="/#tour"
                 onClick={toggleSidebar}>
             <p>Tour</p>
         </NavLink>

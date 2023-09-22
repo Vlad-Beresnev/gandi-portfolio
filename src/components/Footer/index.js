@@ -57,7 +57,8 @@ const Footer = () => {
                                                 <textarea placeholder='Message' name="message" required></textarea>
                                             </li>
                                             <li>
-                                                <input type="submit" className='flat-button' value="SEND" /> 
+                                                 <br />
+                                                <button type="submit" className="flat-button button-53" role="button" >SEND</button>
                                             </li>
                                         </ul>
                                     </form>

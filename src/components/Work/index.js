@@ -25,7 +25,7 @@ const Contact = () => {
         <div className='work'>
             <div className='logo logo-black'>
                     <a className='logo-home' href="/" style={{color: "#fff"}}>Sugandi Moenthe</a>
-                    <p className='logo-about' href="/contact" style={{color: "#fff"}}>Work</p>
+                    <p className='logo-about' href="/work" style={{color: "#fff"}}>Work</p>
             </div>
             <h1 className='title'><AnimatedLetters letterClass={letterClass} strArray={['S', 'o', 'n', 'g', 's', ' ', '&', ' ', 'C', 'o', 'v', 'e', 'r', 's']} idx={15} /></h1>
             <div className='work-container'>

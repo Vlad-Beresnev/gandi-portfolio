@@ -82,7 +82,7 @@ const Home = () => {
                         
                         </h1>
                         {/*<h2>All the time God is very good!</h2>*/}
-                        <Link to="/contact" className='flat-buttom'>CONTACT ME</Link>
+                        <a href="/#contact" className='flat-buttom'>CONTACT ME</a>
                     </div>
                 </section>
                 <section className='container gallery'>

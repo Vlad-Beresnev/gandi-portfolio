@@ -39,6 +39,12 @@ const Gallery = () => {
             <div className="video">
                 <ReactPlayer className="videor" url="https://youtu.be/Nrp8nMBNY4o?si=jh6psLWNeylUrJJA" width="100%"/>
             </div>
+            <div className="video">
+                <ReactPlayer className="videor" url="https://youtu.be/3A5kAeqn9Z8?si=9AU9Pa-D-xeQFtft" width="100%"/>
+            </div>
+            <div className="video">
+                <ReactPlayer className="videor" url="https://youtu.be/LSGbEabIs84?si=plIPfcz7gKBrpOlP" width="100%"/>
+            </div>
         </div>
         <h2 className="container title title-instagram">Instagram</h2>
         <div className="gallery gallery-instagram">
