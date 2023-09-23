@@ -1,3 +1,7 @@
+html {
+    overflow-x: hidden;
+}
+
 .tour {
     display: flex;
     flex-direction: column;
@@ -41,6 +45,7 @@
 }
 
 .place {
+    
     font-size: 24px;
     color: #000;
     margin-bottom: -8px;

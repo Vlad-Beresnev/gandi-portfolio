@@ -2,6 +2,8 @@ import { Link, NavLink, useLocation } from "react-router-dom"
 import './index.scss'
 import "../../components/Home/index.scss"
 import "../../components/Work/index.scss"
+import "../../components/Tour/index.scss"
+
 import LogoS from "../../assets/images/logo.jpeg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHome, faUser, faEnvelope, faBars, faXmark, } from "@fortawesome/free-solid-svg-icons"
@@ -60,21 +62,19 @@ const Sidebar = () => {
         <a className="contact-link" to="/#about" href="/#about" onClick={toggleSidebar}>About</a>
         <Link    
                 className="contact-link"
-                to="/work"
-                href="/#work"
+                to="/work#"
                 onClick={toggleSidebar}>
             <p>Work</p>
         </Link>
         <Link  
                 className="contact-link"
-                to="/tour"
+                to="/tour#work"
                 onClick={toggleSidebar}>
             <p>Tour</p>
         </Link>
-        <a exact="true" 
-                activeclassname="active" 
+        <a 
                 className="contact-link"
-                to="/#contact"
+                href="#contact"
                 onClick={toggleSidebar}>
             <p>Contact</p>
         </a>

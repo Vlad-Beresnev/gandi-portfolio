@@ -17,7 +17,7 @@ import Work10 from "../../assets/images/work-10.png"
 import Footer from "../../components/Footer"
 
 
-const Contact = () => {
+const Work = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     
 
@@ -34,20 +34,20 @@ const Contact = () => {
                 </div>
                 <div className='work-item work-item-2'>
                 <a href="https://youtu.be/ecsxEAx4aM4?si=Gm7-dTl5ndt8vA_B"><button class="uiverse">
-    <div class="wrapper">
+    <div className="wrapper">
         <span>Listen now!</span>
-        <div class="circle circle-12"></div>
-        <div class="circle circle-11"></div>
-        <div class="circle circle-10"></div>
-        <div class="circle circle-9"></div>
-        <div class="circle circle-8"></div>
-        <div class="circle circle-7"></div>
-        <div class="circle circle-6"></div>
-        <div class="circle circle-5"></div>
-        <div class="circle circle-4"></div>
-        <div class="circle circle-3"></div>
-        <div class="circle circle-2"></div>
-        <div class="circle circle-1"></div>
+        <div className="circle circle-12"></div>
+        <div className="circle circle-11"></div>
+        <div className="circle circle-10"></div>
+        <div className="circle circle-8"></div>
+        <div className="circle circle-9"></div>
+        <div className="circle circle-6"></div>
+        <div className="circle circle-5"></div>
+        <div className="circle circle-4"></div>
+        <div className="circle circle-2"></div>
+        <div className="circle circle-3"></div>
+        <div className="circle circle-1"></div>
+        <div className="circle circle-7"></div>
     </div>
 </button></a>
                 </div>
@@ -104,18 +104,18 @@ const Contact = () => {
                 <a href="https://youtu.be/V1UT17hSflo?si=YLwCQF3PG0Ic2kl6"><button class="uiverse">
     <div class="wrapper">
         <span>Listen now!</span>
-        <div class="circle circle-12"></div>
-        <div class="circle circle-11"></div>
-        <div class="circle circle-10"></div>
-        <div class="circle circle-9"></div>
-        <div class="circle circle-8"></div>
-        <div class="circle circle-7"></div>
-        <div class="circle circle-6"></div>
-        <div class="circle circle-5"></div>
-        <div class="circle circle-4"></div>
-        <div class="circle circle-3"></div>
-        <div class="circle circle-2"></div>
-        <div class="circle circle-1"></div>
+        <div className="circle circle-12"></div>
+        <div className="circle circle-11"></div>
+        <div className="circle circle-10"></div>
+        <div className="circle circle-9"></div>
+        <div className="circle circle-8"></div>
+        <div className="circle circle-7"></div>
+        <div className="circle circle-6"></div>
+        <div className="circle circle-5"></div>
+        <div className="circle circle-4"></div>
+        <div className="circle circle-3"></div>
+        <div className="circle circle-2"></div>
+        <div className="circle circle-1"></div>
     </div>
 </button></a>
                 </div>
@@ -147,4 +147,4 @@ const Contact = () => {
     )
 }
 
-export default Contact
+export default Work

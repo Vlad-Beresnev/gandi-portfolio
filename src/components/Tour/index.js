@@ -81,19 +81,7 @@ const Tour = () => {
                     <a href="https://www.lippu.fi/en/city/helsinki-22/"><button className="button-89" role="button">Tickets</button></a>
                     </div>
                 </div>
-                <div className='tour-container'>
-                    <div className='tour-item tour-item-1'>
-                        <h1 className='date'>22</h1>
-                        <h1 className='date'>Oct</h1>
-                    </div>
-                    <div className='tour-item tour-item-2'>
-                        <p className='place'>Red Hat Amphitheater</p>
-                        <p className='place city'>Raleigh, United States</p>
-                    </div>
-                    <div className='tour-item tour-item-3'>
-                    <a href="https://www.lippu.fi/en/city/helsinki-22/"><button className="button-89" role="button">Tickets</button></a>
-                    </div>
-                </div>
+                
                 <div className='tour-container'>
                     <div className='tour-item tour-item-1'>
                         <h1 className='date'>25</h1>

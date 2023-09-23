@@ -22,7 +22,7 @@ const Gallery = () => {
         <div className="box">
         <div className="gallery gallery-youtube">
             <div className="video">
-                <ReactPlayer className="videor" url="https://youtu.be/ecsxEAx4aM4?si=Gm7-dTl5ndt8vA_B" youtube width="100%" />
+                <ReactPlayer className="videor" url="https://youtu.be/ecsxEAx4aM4?si=Gm7-dTl5ndt8vA_B" width="100%" />
             </div>
             <div className="video">
                 <ReactPlayer className="videor" url="https://youtu.be/6YuwooKgmDE?si=7i3MsjQUj2mHpBzb" width="100%"/>
