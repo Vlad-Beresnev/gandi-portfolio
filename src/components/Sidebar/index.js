@@ -62,8 +62,8 @@ const Sidebar = () => {
         <a className="contact-link" href="/#about" onClick={toggleSidebar}>About</a>
         <a 
                 className="contact-link"
-                href="/work"
-                to="/work"
+                href="/work/#work"
+                to="/#work"
                 onClick={toggleSidebar}>
             <p>Work</p>
         </a>
