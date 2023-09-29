@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 import './index.scss';
 import "./index-contact.scss"
 import Loader from 'react-loaders';
-import GandiPhoto from "../../assets/images/gandi-2.png"
+import GandiPhoto from "../../assets/images/gandi-2-crop.png"
 import GandiArtist from "../../assets/images/gandi-artist.jpeg"
 import GandiArtist2 from "../../assets/images/gandi-artist2.jpeg"
 import GandiArtist3 from "../../assets/images/gandi-artist3.jpeg"

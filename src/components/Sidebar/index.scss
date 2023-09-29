@@ -16,8 +16,8 @@
     position: fixed;
     right: 10px;
     padding: 8px;
-    width: 15px;
-    height: 25px;
+    width: 37px;
+    height: 100%;
     margin: 8px;
     height: 100%;
     border-radius: 5px;
@@ -25,15 +25,15 @@
 }
 
 .menu div {
-    width: 25px;
-    height: 15px;
+    width: 37px;
+    height: 37px;
     margin: 0px;
     position: fixed;
 }
 
 .menu span {
     background: #E57C23;
-    width: 100%;
+    width: 25px;
     height: 3px;
     border-radius: 5px;
     display: block;
