@@ -1,6 +1,9 @@
 import { Link, NavLink, useLocation } from "react-router-dom"
 import './index.scss'
 import "../../components/Home/index.scss"
+import "../../components/Work/index.scss"
+import "../../components/Tour/index.scss"
+
 import LogoS from "../../assets/images/logo.jpeg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHome, faUser, faEnvelope, faBars, faXmark, } from "@fortawesome/free-solid-svg-icons"
@@ -55,29 +58,24 @@ const Sidebar = () => {
         </div>
         )}
         <nav className="menu-trigger">
-        <a className="contact-link" exact="true" activeclassname="active" to="/#home" href="/#home" onClick={toggleSidebar}>Home</a>
-        <a className="contact-link" to="/#about" href="/#about" onClick={toggleSidebar}>About</a>
-        <NavLink exact="true" 
-                activeclassname="active" 
-                className={`openmenu span ${location.pathname === "/work" ? "work-page" : ""}`}
-                to="/work"
-                onClick={() => {
-                    toggleSidebar();
-                }}>
-            <p>Work</p>
-        </NavLink>
-        <NavLink exact="true" 
-                activeclassname="active" 
+        <a className="contact-link" href="/#home" onClick={toggleSidebar}>Home</a>
+        <a className="contact-link" href="/#about" onClick={toggleSidebar}>About</a>
+        <a 
                 className="contact-link"
+                href="/work"
+                to="/work"
+                onClick={toggleSidebar}>
+            <p>Work</p>
+        </a>
+        <a
+                className="contact-link"
+                href="/tour"
                 to="/tour"
-                href="/#tour"
                 onClick={toggleSidebar}>
             <p>Tour</p>
-        </NavLink>
-        <a exact="true" 
-                activeclassname="active" 
+        </a>
+        <a 
                 className="contact-link"
-                to="/#contact"
                 href="#contact"
                 onClick={toggleSidebar}>
             <p>Contact</p>

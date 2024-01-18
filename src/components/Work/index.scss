@@ -1,10 +1,14 @@
+html {
+  overflow-x: hidden;
+}
+
 
 .work {
     display: flex;
     justify-content: center;
     flex-direction:column;
     transform-style: preserve-3d;
-    background-color: #fff;
+    background-color: #F8F6F4;
 }
 
 .logo-black {
@@ -14,6 +18,7 @@
   }
 
 }
+
 
 .work-container {
     display: flex;

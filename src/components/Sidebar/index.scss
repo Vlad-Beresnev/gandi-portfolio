@@ -1,6 +1,4 @@
-html {
-    scroll-behavior: smooth;
-}
+
 
 .nav-bar.open {
     position: fixed;
@@ -17,9 +15,9 @@ html {
 .menu {
     position: fixed;
     right: 10px;
-    padding: 15px 10px;
-    width: 15px;
-    height: 25px;
+    padding: 8px;
+    width: 37px;
+    height: 100%;
     margin: 8px;
     height: 100%;
     border-radius: 5px;
@@ -27,15 +25,15 @@ html {
 }
 
 .menu div {
-    width: 25px;
-    height: 15px;
+    width: 37px;
+    height: 37px;
     margin: 0px;
     position: fixed;
 }
 
 .menu span {
-    background: #5CD2E6;
-    width: 100%;
+    background: #E57C23;
+    width: 25px;
     height: 3px;
     border-radius: 5px;
     display: block;
@@ -64,16 +62,16 @@ html {
 }
 
 .openmenu span {
-    background-color: #000000;
+    background-color: #FFB000;
 }
 
 .openmenu.work-page .menu span {
-    background-color: black;
+    background-color: #FFB000;
 }
 
 /* Add styles for the .menu span element when not on the /work page */
 .openmenu .menu span {
-    background-color: #fff;
+    background-color: #D2E9E9;
     width: 100%;
     height: 3px;
     border-radius: 5px;
@@ -88,7 +86,7 @@ html {
 
 .nav-bar {
     right: 0px;
-    background: #fff;
+    background: #D2E9E9;
     height: 100%;
     position: absolute;
     width: 0px;

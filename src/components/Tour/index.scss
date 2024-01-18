@@ -1,7 +1,11 @@
+html {
+    overflow-x: hidden;
+}
+
 .tour {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #F8F6F4;
 }
 
 .tour-container {
@@ -27,7 +31,7 @@
     flex-direction: column;
     width: 200px;
     margin: 10px;
-    background-color: white;
+    background-color: F8F6F4;
     font-family: 'Helvetica';
 }
 
@@ -41,6 +45,7 @@
 }
 
 .place {
+    
     font-size: 24px;
     color: #000;
     margin-bottom: -8px;
