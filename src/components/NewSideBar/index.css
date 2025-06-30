@@ -1,0 +1,47 @@
+/* src/components/Sidebar.css */
+
+.circle-1 {
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  background-color: #E0F7FA;
+  border-color: #FFCCBC;
+  border-style: solid;
+  border-width: 1px;
+
+  /* Apply blur to the content *behind* the element */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px); /* For Safari compatibility */
+
+  /* Optional: Simulate the subtle highlight and depth */
+  box-shadow:
+    rgba(224, 247, 250, 1) 0 0 10px rgba(255, 255, 255, 0.4) inset;
+}
+
+.sidebar-item:hover {
+  color: #E0F7FA;
+}
+
+.sidebar {
+  position: fixed;
+
+  /* right-0 top-2 */
+  right: 0px;
+  top: 0.5rem; /* 8px */
+
+  /* py-4 (padding-top and padding-bottom) */
+  padding-top: 1rem; /* 16px */
+  padding-bottom: 1rem; /* 16px */
+
+  /* px-2 (padding-left and padding-right) */
+  padding-left: 0.5rem; /* 8px */
+  padding-right: 0.5rem; /* 8px */
+
+  /* flex flex-col items-end */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  /* z-20 */
+  z-index: 20;
+}

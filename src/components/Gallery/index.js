@@ -46,7 +46,7 @@ const Gallery = () => {
                 <ReactPlayer className="videor" url="https://youtu.be/LSGbEabIs84?si=plIPfcz7gKBrpOlP" width="100%"/>
             </div>
         </div>
-        <h2 className="title title-instagram">Instagram</h2>
+        {/* <h2 className="title title-instagram">Instagram</h2>
         <div className="gallery gallery-instagram">
             <a href="https://www.instagram.com/p/Cq0RiKuIxCY/"><img src={Insta1} /></a>
             <a href="https://www.instagram.com/p/Cq3oGFQItlH/"><img src={Insta2} /></a>
@@ -60,7 +60,7 @@ const Gallery = () => {
             <a href="https://www.instagram.com/p/CV-n5qqj1yv/"><img src={Insta10}  /></a>
             <a href="https://www.instagram.com/p/CgZwBxCDES5/"><img src={Insta11}  /></a>
             <a href="https://www.instagram.com/p/Cj5fk9FjqQn/?img_index=1"><img src={Insta12}  /></a>
-        </div>
+        </div> */}
     </div>
     )
 }
